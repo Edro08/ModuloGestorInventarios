@@ -80,6 +80,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entradas\Model\Entradas.cs" />
+    <Compile Include="Entradas\Model\IEntradas.cs" />
     <Compile Include="Entradas\Presenter\EntradasPresenter.cs" />
     <Compile Include="Entradas\View\EntradasView.cs">
       <SubType>Form</SubType>
@@ -88,6 +90,7 @@
       <DependentUpon>EntradasView.cs</DependentUpon>
     </Compile>
     <Compile Include="Entradas\View\IEntradasView.cs" />
+    <Compile Include="Entradas\_Repository\EntradasRepository.cs" />
     <Compile Include="MainContainer\Presenter\MainContainerPresenter.cs" />
     <Compile Include="MainContainer\View\IMainContainerView.cs" />
     <Compile Include="Inventarios\Model\FiltroInventario.cs" />
@@ -119,15 +122,9 @@
       <DependentUpon>InventarioView.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventarios\_Repository\InventarioRepository.cs" />
-    <Compile Include="Productos\Presenter\ProductosPresenter.cs" />
-    <Compile Include="Productos\View\ProductosView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Productos\View\ProductosView.Designer.cs">
-      <DependentUpon>ProductosView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\Model\Proveedores.cs" />
     <Compile Include="Proveedores\Presenter\ProveedoresPresenter.cs" />
     <Compile Include="Proveedores\View\ProveedoresView.cs">
       <SubType>Form</SubType>
@@ -135,6 +132,7 @@
     <Compile Include="Proveedores\View\ProveedoresView.Designer.cs">
       <DependentUpon>ProveedoresView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proveedores\_Repository\ProveedoresRepository.cs" />
     <Compile Include="Reportes\View\ReportesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +145,7 @@
     <Compile Include="Reportes\View\VisorReportesView.Designer.cs">
       <DependentUpon>VisorReportesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salidas\Model\Salidas.cs" />
     <Compile Include="Salidas\Presenter\SalidasPresenter.cs" />
     <Compile Include="Salidas\View\SalidasView.cs">
       <SubType>Form</SubType>
@@ -154,6 +153,7 @@
     <Compile Include="Salidas\View\SalidasView.Designer.cs">
       <DependentUpon>SalidasView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salidas\_Repository\SalidasRepository.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="_Repositories\Connection.cs" />
     <EmbeddedResource Include="Login\View\LoginView.resx">
@@ -197,22 +197,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entradas\Model\" />
-    <Folder Include="Entradas\_Repository\" />
-    <Folder Include="Mantenimiento\EmpleadosCategorias\" />
+    <Folder Include="Mantenimiento\Empleados\" />
     <Folder Include="Mantenimiento\ProductosCategorias\" />
     <Folder Include="Mantenimiento\ProductosMarcas\" />
     <Folder Include="Mantenimiento\Ubicaciones\" />
-    <Folder Include="Mantenimiento\Usuarios\" />
-    <Folder Include="Productos\Model\" />
-    <Folder Include="Productos\_Repository\" />
-    <Folder Include="Proveedores\Model\" />
-    <Folder Include="Proveedores\_Repository\" />
     <Folder Include="Reportes\Model\" />
     <Folder Include="Reportes\Presenter\" />
     <Folder Include="Reportes\_Repository\" />
-    <Folder Include="Salidas\Model\" />
-    <Folder Include="Salidas\_Repository\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\agregar.png" />

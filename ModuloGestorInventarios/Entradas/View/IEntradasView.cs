@@ -8,7 +8,7 @@ namespace ModuloGestorInventarios.Entradas.View
     interface IEntradasView
     {
         //Metodos
-        void setInventarioBindingSource(BindingSource inventarioList);
+        void setEntradasBindingSource(BindingSource entradasList);
         void MostrarMsj(string message, string caption, MessageBoxButtons buttons);
     }
 }

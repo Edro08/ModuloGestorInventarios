@@ -10,7 +10,9 @@ namespace ModuloGestorInventarios.Inventarios.View
     {
         //Auxiliares
         private bool tpDetallesOn = false;
-        DataGridViewButtonColumn btnVer;
+        private bool tpProductosOn = false;
+        DataGridViewButtonColumn btnVerInventario;
+        DataGridViewButtonColumn btnVerProducto;
         DataGridViewButtonColumn btnEditar;
         private int IdInventario;
 
@@ -21,6 +23,7 @@ namespace ModuloGestorInventarios.Inventarios.View
         {
             InitializeComponent();
             tabControlInventario.TabPages.Remove(tpDetalles);
+            tabControlInventario.TabPages.Remove(tpProduto);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -79,14 +82,24 @@ namespace ModuloGestorInventarios.Inventarios.View
 
         public void setInventarioBindingSource(List<Inventario> inventarioList)
         {
-            if (btnVer == null)
+            if (btnVerInventario == null)
             {
-                btnVer = new DataGridViewButtonColumn();
-                dgvInventario.Columns.Add(btnVer);
-                btnVer.HeaderText = "Ver";
-                btnVer.Text = "Ver";
-                btnVer.Name = "btnVer";
-                btnVer.UseColumnTextForButtonValue = true;
+                btnVerInventario = new DataGridViewButtonColumn();
+                dgvInventario.Columns.Add(btnVerInventario);
+                btnVerInventario.HeaderText = "Inventario";
+                btnVerInventario.Text = "Inventario";
+                btnVerInventario.Name = "btnVerInventario";
+                btnVerInventario.UseColumnTextForButtonValue = true;
+            }
+
+            if (btnVerProducto == null)
+            {
+                btnVerProducto = new DataGridViewButtonColumn();
+                dgvInventario.Columns.Add(btnVerProducto);
+                btnVerProducto.HeaderText = "Ver";
+                btnVerProducto.Text = "Ver";
+                btnVerProducto.Name = "btnVerProducto";
+                btnVerProducto.UseColumnTextForButtonValue = true;
             }
 
             if (btnEditar == null)
@@ -105,7 +118,7 @@ namespace ModuloGestorInventarios.Inventarios.View
 
         private void dgvInventario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvInventario.Columns.IndexOf(btnVer) || e.ColumnIndex == dgvInventario.Columns.IndexOf(btnEditar))
+            if (e.ColumnIndex == dgvInventario.Columns.IndexOf(btnVerInventario) || e.ColumnIndex == dgvInventario.Columns.IndexOf(btnEditar))
             {
                 if (!tpDetallesOn)
                 {
@@ -113,7 +126,7 @@ namespace ModuloGestorInventarios.Inventarios.View
                     tabControlInventario.SelectedTab = tpDetalles;
                     tpDetallesOn = true;
 
-                    if (e.ColumnIndex == dgvInventario.Columns.IndexOf(btnVer)) {
+                    if (e.ColumnIndex == dgvInventario.Columns.IndexOf(btnVerInventario)) {
                         btnCancelar.Text = "OK";
                         btnGuardar.Visible = false;
                         txtExistenciasMax.ReadOnly = true;

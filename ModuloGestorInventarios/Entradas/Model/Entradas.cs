@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModuloGestorInventarios.Productos.Presenter
+namespace ModuloGestorInventarios.Entradas.Model
 {
-    class ProductosPresenter
+    class Entradas
     {
     }
 }

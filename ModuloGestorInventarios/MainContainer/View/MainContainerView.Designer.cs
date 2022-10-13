@@ -39,9 +39,7 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnSalir = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnProveedores = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.btnMovimientos = new System.Windows.Forms.Button();
             this.btnMtto = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnSalidas = new System.Windows.Forms.Button();
@@ -61,10 +59,9 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.panelBarraTitulo.Controls.Add(this.panelUsuario);
             this.panelBarraTitulo.Controls.Add(this.panelBotonesControl);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBarraTitulo.Location = new System.Drawing.Point(4, 4);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelBarraTitulo.Location = new System.Drawing.Point(3, 3);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1192, 43);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(894, 35);
             this.panelBarraTitulo.TabIndex = 0;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
@@ -72,10 +69,9 @@ namespace ModuloGestorInventarios.MainContainer.View
             // 
             this.panelUsuario.Controls.Add(this.btnCerrarSesion);
             this.panelUsuario.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelUsuario.Location = new System.Drawing.Point(825, 0);
-            this.panelUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.panelUsuario.Location = new System.Drawing.Point(619, 0);
             this.panelUsuario.Name = "panelUsuario";
-            this.panelUsuario.Size = new System.Drawing.Size(199, 43);
+            this.panelUsuario.Size = new System.Drawing.Size(149, 35);
             this.panelUsuario.TabIndex = 1;
             // 
             // btnCerrarSesion
@@ -92,7 +88,7 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnCerrarSesion.Location = new System.Drawing.Point(0, 0);
             this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(0);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(195, 43);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(146, 35);
             this.btnCerrarSesion.TabIndex = 2;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -103,10 +99,9 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.panelBotonesControl.Controls.Add(this.btnMax);
             this.panelBotonesControl.Controls.Add(this.btnSalir);
             this.panelBotonesControl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBotonesControl.Location = new System.Drawing.Point(1024, 0);
-            this.panelBotonesControl.Margin = new System.Windows.Forms.Padding(4);
+            this.panelBotonesControl.Location = new System.Drawing.Point(768, 0);
             this.panelBotonesControl.Name = "panelBotonesControl";
-            this.panelBotonesControl.Size = new System.Drawing.Size(168, 43);
+            this.panelBotonesControl.Size = new System.Drawing.Size(126, 35);
             this.panelBotonesControl.TabIndex = 0;
             // 
             // btnMin
@@ -117,10 +112,10 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Image = global::ModuloGestorInventarios.Properties.Resources.Resta_Small_white;
-            this.btnMin.Location = new System.Drawing.Point(27, 0);
+            this.btnMin.Location = new System.Drawing.Point(21, 0);
             this.btnMin.Margin = new System.Windows.Forms.Padding(0);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(47, 43);
+            this.btnMin.Size = new System.Drawing.Size(35, 35);
             this.btnMin.TabIndex = 2;
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
@@ -133,10 +128,10 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnMax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.Image = global::ModuloGestorInventarios.Properties.Resources.Max_Small_White;
-            this.btnMax.Location = new System.Drawing.Point(74, 0);
+            this.btnMax.Location = new System.Drawing.Point(56, 0);
             this.btnMax.Margin = new System.Windows.Forms.Padding(0);
             this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(47, 43);
+            this.btnMax.Size = new System.Drawing.Size(35, 35);
             this.btnMax.TabIndex = 1;
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
@@ -149,10 +144,10 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = global::ModuloGestorInventarios.Properties.Resources.Cerrar_Small_White;
-            this.btnSalir.Location = new System.Drawing.Point(121, 0);
+            this.btnSalir.Location = new System.Drawing.Point(91, 0);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(47, 43);
+            this.btnSalir.Size = new System.Drawing.Size(35, 35);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -161,9 +156,7 @@ namespace ModuloGestorInventarios.MainContainer.View
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(5)))), ((int)(((byte)(60)))));
             this.panelMenu.Controls.Add(this.btnProveedores);
-            this.panelMenu.Controls.Add(this.btnProductos);
             this.panelMenu.Controls.Add(this.btnMenu);
-            this.panelMenu.Controls.Add(this.btnMovimientos);
             this.panelMenu.Controls.Add(this.btnMtto);
             this.panelMenu.Controls.Add(this.btnReportes);
             this.panelMenu.Controls.Add(this.btnSalidas);
@@ -171,11 +164,10 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.panelMenu.Controls.Add(this.btnDashboard);
             this.panelMenu.Controls.Add(this.btnInventario);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(4, 47);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelMenu.MaximumSize = new System.Drawing.Size(293, 0);
+            this.panelMenu.Location = new System.Drawing.Point(3, 38);
+            this.panelMenu.MaximumSize = new System.Drawing.Size(250, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(293, 626);
+            this.panelMenu.Size = new System.Drawing.Size(250, 509);
             this.panelMenu.TabIndex = 1;
             // 
             // btnProveedores
@@ -189,34 +181,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnProveedores.ForeColor = System.Drawing.Color.White;
             this.btnProveedores.Image = global::ModuloGestorInventarios.Properties.Resources.salida;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 370);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 247);
             this.btnProveedores.Margin = new System.Windows.Forms.Padding(0);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnProveedores.Size = new System.Drawing.Size(293, 62);
+            this.btnProveedores.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnProveedores.Size = new System.Drawing.Size(250, 45);
             this.btnProveedores.TabIndex = 59;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.BackColor = System.Drawing.Color.Transparent;
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnProductos.ForeColor = System.Drawing.Color.White;
-            this.btnProductos.Image = global::ModuloGestorInventarios.Properties.Resources.salida;
-            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(0, 309);
-            this.btnProductos.Margin = new System.Windows.Forms.Padding(0);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnProductos.Size = new System.Drawing.Size(293, 62);
-            this.btnProductos.TabIndex = 58;
-            this.btnProductos.Text = "Productos";
-            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnMenu
             // 
@@ -232,32 +205,12 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnMenu.Location = new System.Drawing.Point(0, 1);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(0);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMenu.Size = new System.Drawing.Size(293, 62);
+            this.btnMenu.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnMenu.Size = new System.Drawing.Size(250, 45);
             this.btnMenu.TabIndex = 35;
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // btnMovimientos
-            // 
-            this.btnMovimientos.BackColor = System.Drawing.Color.Transparent;
-            this.btnMovimientos.FlatAppearance.BorderSize = 0;
-            this.btnMovimientos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.btnMovimientos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMovimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnMovimientos.ForeColor = System.Drawing.Color.White;
-            this.btnMovimientos.Image = global::ModuloGestorInventarios.Properties.Resources.gestion_del_tiempo;
-            this.btnMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMovimientos.Location = new System.Drawing.Point(0, 555);
-            this.btnMovimientos.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMovimientos.Name = "btnMovimientos";
-            this.btnMovimientos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMovimientos.Size = new System.Drawing.Size(293, 62);
-            this.btnMovimientos.TabIndex = 55;
-            this.btnMovimientos.Text = "Movimientos";
-            this.btnMovimientos.UseVisualStyleBackColor = true;
             // 
             // btnMtto
             // 
@@ -270,14 +223,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnMtto.ForeColor = System.Drawing.Color.White;
             this.btnMtto.Image = global::ModuloGestorInventarios.Properties.Resources.herramientas_para_reparar;
             this.btnMtto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMtto.Location = new System.Drawing.Point(0, 494);
+            this.btnMtto.Location = new System.Drawing.Point(0, 347);
             this.btnMtto.Margin = new System.Windows.Forms.Padding(0);
             this.btnMtto.Name = "btnMtto";
-            this.btnMtto.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMtto.Size = new System.Drawing.Size(293, 62);
+            this.btnMtto.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnMtto.Size = new System.Drawing.Size(250, 45);
             this.btnMtto.TabIndex = 57;
             this.btnMtto.Text = "Mantenimientos";
             this.btnMtto.UseVisualStyleBackColor = true;
+            this.btnMtto.Click += new System.EventHandler(this.btnMtto_Click);
             // 
             // btnReportes
             // 
@@ -290,14 +244,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = global::ModuloGestorInventarios.Properties.Resources.Reportes;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 432);
+            this.btnReportes.Location = new System.Drawing.Point(0, 297);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(0);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(297, 62);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(250, 45);
             this.btnReportes.TabIndex = 56;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnSalidas
             // 
@@ -310,14 +265,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnSalidas.ForeColor = System.Drawing.Color.White;
             this.btnSalidas.Image = global::ModuloGestorInventarios.Properties.Resources.salida;
             this.btnSalidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalidas.Location = new System.Drawing.Point(0, 247);
+            this.btnSalidas.Location = new System.Drawing.Point(0, 201);
             this.btnSalidas.Margin = new System.Windows.Forms.Padding(0);
             this.btnSalidas.Name = "btnSalidas";
-            this.btnSalidas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnSalidas.Size = new System.Drawing.Size(293, 62);
+            this.btnSalidas.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnSalidas.Size = new System.Drawing.Size(250, 45);
             this.btnSalidas.TabIndex = 44;
             this.btnSalidas.Text = "Salidas";
             this.btnSalidas.UseVisualStyleBackColor = true;
+            this.btnSalidas.Click += new System.EventHandler(this.btnSalidas_Click);
             // 
             // btnEntradas
             // 
@@ -330,14 +286,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnEntradas.ForeColor = System.Drawing.Color.White;
             this.btnEntradas.Image = global::ModuloGestorInventarios.Properties.Resources.entrada;
             this.btnEntradas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntradas.Location = new System.Drawing.Point(0, 186);
+            this.btnEntradas.Location = new System.Drawing.Point(0, 151);
             this.btnEntradas.Margin = new System.Windows.Forms.Padding(0);
             this.btnEntradas.Name = "btnEntradas";
-            this.btnEntradas.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnEntradas.Size = new System.Drawing.Size(293, 62);
+            this.btnEntradas.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnEntradas.Size = new System.Drawing.Size(250, 45);
             this.btnEntradas.TabIndex = 42;
             this.btnEntradas.Text = "Entradas";
             this.btnEntradas.UseVisualStyleBackColor = true;
+            this.btnEntradas.Click += new System.EventHandler(this.btnEntradas_Click);
             // 
             // btnDashboard
             // 
@@ -350,14 +307,15 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Image = global::ModuloGestorInventarios.Properties.Resources.dashboard;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 63);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 51);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(293, 62);
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(250, 45);
             this.btnDashboard.TabIndex = 38;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnInventario
             // 
@@ -370,13 +328,13 @@ namespace ModuloGestorInventarios.MainContainer.View
             this.btnInventario.ForeColor = System.Drawing.Color.White;
             this.btnInventario.Image = global::ModuloGestorInventarios.Properties.Resources.inventario;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 124);
+            this.btnInventario.Location = new System.Drawing.Point(0, 101);
             this.btnInventario.Margin = new System.Windows.Forms.Padding(0);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnInventario.Size = new System.Drawing.Size(293, 62);
+            this.btnInventario.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnInventario.Size = new System.Drawing.Size(250, 45);
             this.btnInventario.TabIndex = 40;
-            this.btnInventario.Text = "Inventario";
+            this.btnInventario.Text = "Inventario / Producto";
             this.btnInventario.UseVisualStyleBackColor = true;
             this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
@@ -384,28 +342,26 @@ namespace ModuloGestorInventarios.MainContainer.View
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(297, 47);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.panelContenedor.Location = new System.Drawing.Point(253, 38);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(899, 626);
+            this.panelContenedor.Size = new System.Drawing.Size(644, 509);
             this.panelContenedor.TabIndex = 7;
             // 
             // MainContainerView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(1200, 677);
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.ControlBox = false;
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelBarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(1200, 677);
+            this.MinimumSize = new System.Drawing.Size(900, 550);
             this.Name = "MainContainerView";
-            this.Padding = new System.Windows.Forms.Padding(4);
+            this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainContainerView";
             this.panelBarraTitulo.ResumeLayout(false);
@@ -426,14 +382,12 @@ namespace ModuloGestorInventarios.MainContainer.View
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnMovimientos;
         private System.Windows.Forms.Button btnMtto;
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Panel panelBotonesControl;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnProveedores;
         private System.Windows.Forms.Panel panelUsuario;
         private System.Windows.Forms.Button btnCerrarSesion;
