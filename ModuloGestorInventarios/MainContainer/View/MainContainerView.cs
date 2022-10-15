@@ -181,14 +181,39 @@ namespace ModuloGestorInventarios.MainContainer.View
             formulario.BringToFront();
         }
 
+        //Eventos OnClick
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            AbrirInventario?.Invoke(this, e);
+            InventarioView formulario;
+            //Busca en la colecion el formulario si el formulario/instancia no existe
+            formulario = panelContenedor.Controls.OfType<InventarioView>().FirstOrDefault();
+
+            if (formulario == null)
+            {
+                AbrirInventario?.Invoke(this, e);
+            }
+            //si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
         }
 
         private void btnEntradas_Click(object sender, EventArgs e)
         {
-            AbrirEntradas?.Invoke(this, e);
+            EntradasView formulario;
+            //Busca en la colecion el formulario si el formulario/instancia no existe
+            formulario = panelContenedor.Controls.OfType<EntradasView>().FirstOrDefault();
+
+            if (formulario == null)
+            {
+                AbrirEntradas?.Invoke(this, e);
+            }
+            //si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -198,76 +223,22 @@ namespace ModuloGestorInventarios.MainContainer.View
 
         private void btnSalidas_Click(object sender, EventArgs e)
         {
-            AbrirSalidas?.Invoke(this, e);
-        }
-
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-            AbrirProveedores?.Invoke(this, e);
-        }
-
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            AbrirReportes?.Invoke(this, e);
-        }
-
-        private void btnMtto_Click(object sender, EventArgs e)
-        {
-            AbrirMantenimientos?.Invoke(this, e);
-        }
-
-        public void MostrarInventario(Form inventario)
-        {
-            InventarioView formulario;
-            //Busca en la colecion el formulario si el formulario/instancia no existe
-            formulario = panelContenedor.Controls.OfType<InventarioView>().FirstOrDefault();
-
-            if (formulario == null)
-            {
-                ConfiguracionesForm(inventario);
-            }
-            //si el formulario/instancia existe
-            else
-            {
-                inventario.BringToFront();
-            }
-        }
-
-        public void MostrarEntradas(Form entradas)
-        {
-            EntradasView formulario;
-            //Busca en la colecion el formulario si el formulario/instancia no existe
-            formulario = panelContenedor.Controls.OfType<EntradasView>().FirstOrDefault();
-
-            if (formulario == null)
-            {
-                ConfiguracionesForm(entradas);
-            }
-            //si el formulario/instancia existe
-            else
-            {
-                entradas.BringToFront();
-            }
-        }
-
-        public void MostrarSalidas(Form salidas)
-        {
             SalidasView formulario;
             //Busca en la colecion el formulario si el formulario/instancia no existe
             formulario = panelContenedor.Controls.OfType<SalidasView>().FirstOrDefault();
 
             if (formulario == null)
             {
-                ConfiguracionesForm(salidas);
+                AbrirSalidas?.Invoke(this, e);
             }
             //si el formulario/instancia existe
             else
             {
-                salidas.BringToFront();
-            }
+                formulario.BringToFront();
+            } 
         }
 
-        public void MostrarProveedores(Form proveedores)
+        private void btnProveedores_Click(object sender, EventArgs e)
         {
             ProveedoresView formulario;
             //Busca en la colecion el formulario si el formulario/instancia no existe
@@ -275,16 +246,16 @@ namespace ModuloGestorInventarios.MainContainer.View
 
             if (formulario == null)
             {
-                ConfiguracionesForm(proveedores);
+                AbrirProveedores?.Invoke(this, e);
             }
             //si el formulario/instancia existe
             else
             {
-                proveedores.BringToFront();
+                formulario.BringToFront();
             }
         }
 
-        public void MostrarReportes(Form reportes)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
             ReportesView formulario;
             //Busca en la colecion el formulario si el formulario/instancia no existe
@@ -292,19 +263,51 @@ namespace ModuloGestorInventarios.MainContainer.View
 
             if (formulario == null)
             {
-                ConfiguracionesForm(reportes);
+                AbrirReportes?.Invoke(this, e);
             }
             //si el formulario/instancia existe
             else
             {
-                reportes.BringToFront();
+                formulario.BringToFront();
             }
+        }
+
+        private void btnMtto_Click(object sender, EventArgs e)
+        {
+            AbrirMantenimientos?.Invoke(this, e);
+        }
+
+        //Metodos para mostrar formularios
+        public void MostrarInventario(Form inventario)
+        {
+            ConfiguracionesForm(inventario);
+        }
+
+        public void MostrarEntradas(Form entradas)
+        {
+            ConfiguracionesForm(entradas);
+        }
+
+        public void MostrarSalidas(Form salidas)
+        {
+            ConfiguracionesForm(salidas);
+        }
+
+        public void MostrarProveedores(Form proveedores)
+        {
+            ConfiguracionesForm(proveedores);
+        }
+
+        public void MostrarReportes(Form reportes)
+        {
+            ConfiguracionesForm(reportes);
         }
 
         public void MostrarMantenimientos()
         {
             MostrarMsj("Proximamente", "Modulo en contrucción", MessageBoxButtons.OK);
         }
+
         public void MostrarDashBoard()
         {
             MostrarMsj("Proximamente", "Modulo en contrucción", MessageBoxButtons.OK);

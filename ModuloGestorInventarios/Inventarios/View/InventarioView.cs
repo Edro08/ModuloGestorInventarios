@@ -10,7 +10,7 @@ namespace ModuloGestorInventarios.Inventarios.View
     {
         //Auxiliares
         private bool tpDetallesOn = false;
-        private bool tpProductosOn = false;
+        //private bool tpProductosOn = false;
         DataGridViewButtonColumn btnVerInventario;
         DataGridViewButtonColumn btnVerProducto;
         DataGridViewButtonColumn btnEditar;
@@ -85,21 +85,21 @@ namespace ModuloGestorInventarios.Inventarios.View
             if (btnVerInventario == null)
             {
                 btnVerInventario = new DataGridViewButtonColumn();
-                dgvInventario.Columns.Add(btnVerInventario);
                 btnVerInventario.HeaderText = "Inventario";
                 btnVerInventario.Text = "Inventario";
                 btnVerInventario.Name = "btnVerInventario";
                 btnVerInventario.UseColumnTextForButtonValue = true;
+                dgvInventario.Columns.Add(btnVerInventario);
             }
 
             if (btnVerProducto == null)
             {
                 btnVerProducto = new DataGridViewButtonColumn();
-                dgvInventario.Columns.Add(btnVerProducto);
                 btnVerProducto.HeaderText = "Ver";
                 btnVerProducto.Text = "Ver";
                 btnVerProducto.Name = "btnVerProducto";
                 btnVerProducto.UseColumnTextForButtonValue = true;
+                dgvInventario.Columns.Add(btnVerProducto);
             }
 
             if (btnEditar == null)
@@ -111,7 +111,6 @@ namespace ModuloGestorInventarios.Inventarios.View
                 btnEditar.Name = "btnEditar";
                 btnEditar.UseColumnTextForButtonValue = true;
             }
-
             dgvInventario.DataSource = new BindingSource(inventarioList, null);
             dgvInventario.AutoResizeColumns();
         }

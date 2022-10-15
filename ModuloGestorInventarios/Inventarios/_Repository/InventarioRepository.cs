@@ -34,10 +34,29 @@ namespace ModuloGestorInventarios.Inventarios._Repository
         {
             List<Inventario> inventario = new List<Inventario>();
 
-            inventario.Add(new Inventario() { Id = 1, Codigo = 009567, Nombreproducto = "Coca Cola", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5});
-            inventario.Add(new Inventario() { Id = 2, Codigo = 009567, Nombreproducto = "Pepsi", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
-            inventario.Add(new Inventario() { Id = 3, Codigo = 009567, Nombreproducto = "Fanta", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+            for (int i = 1; i <= 200; i ++) {
 
+                if (i % 7 == 0)
+                {
+                    inventario.Add(new Inventario() { Id = i, Codigo = 7140, Nombreproducto = "Tropical Uva", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+                }
+                else if (i % 5 == 0)
+                {
+                    inventario.Add(new Inventario() { Id = i, Codigo = 5100, Nombreproducto = "Pepsi", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+                }
+                else if (i % 3 == 0)
+                {
+                    inventario.Add(new Inventario() { Id = i, Codigo = 3690, Nombreproducto = "Fanta", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+                }
+                else if (i % 2 == 0)
+                {
+                    inventario.Add(new Inventario() { Id = i, Codigo = 2468, Nombreproducto = "Coca Cola", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+                }
+                else
+                {
+                    inventario.Add(new Inventario() { Id = i, Codigo = 1000, Nombreproducto = "Dr.Pe", Existencias = 90, Existenciasmax = 100, Existenciasmin = 5 });
+                }
+            }
             return inventario;
         }
 

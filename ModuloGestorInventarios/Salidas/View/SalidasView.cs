@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ModuloGestorInventarios.Salidas.View
 {
-    public partial class SalidasView : Form
+    public partial class SalidasView : Form, ISalidasView
     {
         public SalidasView()
         {

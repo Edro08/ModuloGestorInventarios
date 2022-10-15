@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ModuloGestorInventarios.Proveedores.View
 {
-    public partial class ProveedoresView : Form
+    public partial class ProveedoresView : Form, IProveedoresView
     {
         public ProveedoresView()
         {

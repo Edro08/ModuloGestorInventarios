@@ -1,4 +1,8 @@
-﻿using ModuloGestorInventarios.Entradas._Repository;
+﻿using System;
+using System.Windows.Forms;
+using ModuloGestorInventarios.Login.Views;
+using ModuloGestorInventarios.MainContainer.View;
+using ModuloGestorInventarios.Entradas._Repository;
 using ModuloGestorInventarios.Entradas.Model;
 using ModuloGestorInventarios.Entradas.View;
 using ModuloGestorInventarios.Entradas.Presenter;
@@ -6,10 +10,14 @@ using ModuloGestorInventarios.Inventarios._Repository;
 using ModuloGestorInventarios.Inventarios.Model;
 using ModuloGestorInventarios.Inventarios.Presenter;
 using ModuloGestorInventarios.Inventarios.View;
-using ModuloGestorInventarios.Login.Views;
-using ModuloGestorInventarios.MainContainer.View;
-using System;
-using System.Windows.Forms;
+using ModuloGestorInventarios.Salidas.View;
+using ModuloGestorInventarios.Salidas.Model;
+using ModuloGestorInventarios.Salidas.Presenter;
+using ModuloGestorInventarios.Salidas._Repository;
+using ModuloGestorInventarios.Proveedores.View;
+using ModuloGestorInventarios.Proveedores.Model;
+using ModuloGestorInventarios.Proveedores._Repository;
+using ModuloGestorInventarios.Proveedores.Presenter;
 
 namespace ModuloGestorInventarios.MainContainer.Presenter
 {
@@ -51,18 +59,18 @@ namespace ModuloGestorInventarios.MainContainer.Presenter
 
         private void AbrirSalidas(object sender, EventArgs e)
         {
-            IEntradasView iEntradasView = new EntradasView();
-            IEntradas Entradas = new EntradasRepository(ConnnectionString);
-            EntradasPresenter EntradasPresenter = new EntradasPresenter(iEntradasView, Entradas, ConnnectionString);
-            iMainContainerView.MostrarEntradas((Form)iEntradasView);
+            ISalidasView iSalidasView = new SalidasView();
+            ISalidas Salidas = new SalidasRepository(ConnnectionString);
+            SalidasPresenter SalidasPresenter = new SalidasPresenter(iSalidasView, Salidas, ConnnectionString);
+            iMainContainerView.MostrarSalidas((Form)iSalidasView);
         }
 
         private void AbrirProveedores(object sender, EventArgs e)
         {
-            IEntradasView iEntradasView = new EntradasView();
-            IEntradas Entradas = new EntradasRepository(ConnnectionString);
-            EntradasPresenter EntradasPresenter = new EntradasPresenter(iEntradasView, Entradas, ConnnectionString);
-            iMainContainerView.MostrarEntradas((Form)iEntradasView);
+            IProveedoresView iProveedoresView = new ProveedoresView();
+            IProveedores Proveedores = new ProveedoresRepository(ConnnectionString);
+            ProveedoresPresenter ProveedoresPresenter = new ProveedoresPresenter(iProveedoresView, Proveedores, ConnnectionString);
+            iMainContainerView.MostrarProveedores((Form)iProveedoresView);
         }
 
         private void AbrirReportes(object sender, EventArgs e)
